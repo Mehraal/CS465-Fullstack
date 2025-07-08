@@ -1,0 +1,23 @@
+{
+  "name": "travlr",
+  "version": "1.0.0",
+  "description": "CS-465 Fullstack Development with MEAN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Mehraal/CS465-Fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehraal/CS465-Fullstack/issues"
+  },
+  "homepage": "https://github.com/Mehraal/CS465-Fullstack#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
