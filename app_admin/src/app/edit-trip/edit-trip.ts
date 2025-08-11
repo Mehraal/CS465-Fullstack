@@ -15,7 +15,7 @@ import { TripData } from '../services/trip-data';
 export class EditTrip  implements OnInit{
 
   public editForm!: FormGroup;
-  trip!: Trip;
+  trip!: TripData;
   submitted = false;
   message : string = '';
 
