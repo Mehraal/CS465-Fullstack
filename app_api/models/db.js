@@ -21,9 +21,9 @@ mongoose.connection.on('disconnected', () => {
 });
 // Windows specific listener
 if(process.platform === 'win32'){
-  const r1 = readLine.createInterface({
-      input: process.stdin,
-      output: process.stdout
+    const r1 = readLine.createInterface({
+    input: process.stdin,
+    output: process.stdout
     });
     r1.on('SIGINT', () => {
         process.emit("SIGINT");
