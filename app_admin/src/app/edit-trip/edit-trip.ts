@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angula
 import { Router } from "@angular/router";
 import { TripData } from '../services/trip-data';
 import { Trip } from '../models/trip';
+import { Authentication } from '../services/authentication';
 
 @Component({
   selector: 'app-edit-trip',
@@ -23,7 +24,8 @@ export class EditTrip  implements OnInit{
 constructor(
   private formBuilder: FormBuilder,
   private router: Router,
-  private tripData: TripData
+  private tripData: TripData,
+  private authentication: Authentication
 ) {}
 
 ngOnInit() : void{
@@ -67,6 +69,10 @@ ngOnInit() : void{
         console.log('Error: ' + error);
       }
   })
+}
+public isLoggedIn()
+{
+  return this.authentication.isLoggedIn();
 }
 
 public onSubmit()
